@@ -28,16 +28,6 @@
         app:layout_constraintTop_toBottomOf="@+id/etNumb2" />
 
     <Button
-        android:id="@+id/btnMod"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="70dp"
-        android:text="%"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnAdd" />
-
-    <Button
         android:id="@+id/btnMult"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -52,11 +42,12 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="40dp"
         android:layout_marginEnd="16dp"
         android:ems="10"
         android:inputType="number"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -86,5 +77,19 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnMult" />
+
+    <Button
+        android:id="@+id/btnDiv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="24dp"
+        android:text="/"
+        app:layout_constraintEnd_toStartOf="@+id/btnMult"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAdd" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -16,7 +16,7 @@ class MainActivity : AppCompatActivity() {
         var etNumb2=findViewById<EditText>(R.id.etNumb2)
         var btnAdd=findViewById<Button>(R.id.btnAdd)
         var btnSub=findViewById<Button>(R.id.btnSub)
-        var btnMod=findViewById<Button>(R.id.btnMod)
+        var btnDiv=findViewById<Button>(R.id.btnDiv)
         var btnMult=findViewById<Button>(R.id.btnMult)
         var tvAnswer=findViewById<TextView>(R.id.tvAnswer)
 
@@ -65,18 +65,18 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
-        btnMod.setOnClickListener{
+        btnDiv.setOnClickListener{
             if (etNumb1.text.toString()==""){
                 Toast.makeText(baseContext,"Enter a number",Toast.LENGTH_LONG).show()
             }
             else if(etNumb1.text.toString()==""){
                 Toast.makeText(baseContext,"Enter a number", Toast.LENGTH_SHORT).show()
             }
-            else{
+            else{.
                 var etNumb1=etNumb1.text.toString().toInt()
                 var etNumb2=etNumb2.text.toString().toInt()
-                var modulus=etNumb1%etNumb2
-                tvAnswer.text="Answer${modulus}"
+                var modulus=etNumb1/etNumb2
+                tvAnswer.text="Answer${divide}"
             }
         }
 
